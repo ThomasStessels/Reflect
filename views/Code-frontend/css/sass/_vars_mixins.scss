@@ -1,0 +1,51 @@
+$base--font_size: 16px;
+$base--line_height: 24px;
+
+$base--font_family: 'Noto Sans', Arial, Helvetica, sans-serif;
+
+$color__link: #00C3E2;
+$color__link-dark: darken($color__link, 5%);
+
+$color__link--alt: #ff9900;
+$color__link-dark--alt: darken($color__link--alt, 5%);;
+
+$color__accent: #ffcb05;
+
+
+// Body colors
+
+$color__background-body: #2C3E50;
+$color__text-body: #323232;
+$color__link-body: $color__link;
+$color__link-dark-body: $color__link-dark;
+
+
+
+
+$default__v-padding: 0.5em;
+$default__h-padding: 0.5em;
+
+$default__border-radius: 3px;
+
+$default__app-width: 480px;
+
+$color__app-background: white;
+
+$color__app__title: white;
+$color__app__title-background: #232323;
+$color__app__alert: $color__app__title;
+$color__app__alert-background: #CC2222;
+$color__app__body: #323232;
+$color__app__body-background: white;
+$color__app__body-newmessagebg: silver;
+$color__app__options: #323232;
+$color__app__options-background: white;
+
+
+
+$color__button__options: white;
+$color__button__options-bg: $color__link;
+$color__button__options-bg--hover: $color__link-dark;
+
+$color__button__options-bg--logout: $color__link--alt;
+$color__button__options-bg--logout--hover: $color__link-dark--alt;

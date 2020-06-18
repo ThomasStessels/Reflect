@@ -1,0 +1,160 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    width: $default__app-width;
+    background-color: $color__app-background;
+    box-shadow: 0px 0px 1em #ccc;
+    font-size: $base--font_size;
+    padding: 0;
+    -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+
+	&__title {
+    font-size: 1.5em;
+    text-align: center;
+    color: $color__app__title;
+    background-color: $color__app__title-background;
+    order: 1;
+    padding: $default__v-padding*2 $default__h-padding*2;
+
+	}
+
+	&__alert {
+    display: block;
+    padding: $default__v-padding*2 $default__h-padding*2;
+    color: $color__app__alert;
+    background-color: $color__app__alert-background;
+    order: 2;
+        
+        &--hidden {display: none}
+
+	}
+
+	&__body {
+    display: block;
+    padding: $default__v-padding*2 $default__h-padding*2;
+    color: $color__app__body;
+    background-color: $color__app__body-background;
+    order: 3;
+
+	}
+
+	&__options {
+    display: block;
+    padding: $default__v-padding*2 $default__h-padding*2;
+    color: $color__app__options;
+    background-color: $color__app__options-background;
+    order: 4;
+
+	}
+    
+    
+    }
+
+.messages__new {
+    display: block;
+    padding: $default__v-padding*3 $default__h-padding*2 $default__v-padding*2;
+    background-color: $color__app__body-newmessagebg;
+    border-bottom: 1px solid $color__app__title-background;
+    margin: -$default__v-padding -$default__h-padding;
+    margin-bottom: $default__v-padding*2;
+}
+
+.messages__list {
+}
+
+.messages__item {
+    display: grid;
+    grid-template-columns: 60px 6fr;
+    grid-template-rows: auto;
+    grid-column-gap: $default__h-padding;
+    grid-row-gap: $default__v-padding;
+    margin: 0;
+    padding: 0;
+    padding-bottom: $default__v-padding;
+    margin-bottom: $default__v-padding;
+    border-bottom: 1px solid #ccc;
+    
+    
+
+	&__avatar {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        align-self: center;
+        display: block;
+        padding: 0.25em;
+        background-color: $color__accent;
+        width: 60px;
+        height: 60px;
+        
+        & img {
+            width: 100%;
+            height: auto;
+        }
+
+	}
+
+	&__username {
+        grid-column-start: 2;
+        grid-column-end: 7;
+        align-self: center;
+        display: block;
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: $default__v-padding $default__h-padding;
+
+	}
+
+	&__text {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        display: block;
+        padding: $default__v-padding $default__h-padding;
+
+	}
+    
+    
+    }
+
+label {
+    display: block;
+    width: 100%;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+	font-family: $base--font_family;
+    font-size: 1em;
+    padding: $default__v-padding $default__h-padding;
+    margin-bottom: $default__v-padding;
+}
+
+// Buttons
+
+.app__button__options {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: $default__v-padding $default__h-padding*2;
+    color: $color__button__options;
+    background-color: $color__button__options-bg;
+    border-radius: $default__border-radius;
+    
+    &:hover {
+        background-color: $color__button__options-bg--hover;  
+    }
+    
+    &--logout {
+        color: $color__button__options;
+        background-color: $color__button__options-bg--logout;
+        
+        &:hover {
+            background-color: $color__button__options-bg--logout--hover;  
+        }
+    }
+
+}
+
