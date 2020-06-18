@@ -1,0 +1,8 @@
+{
+    "Database":{
+        "conn": "http://localhost:3000" 
+    },
+    "jwt":{
+        "secret": "MyVerySecretWord"
+    }
+}
