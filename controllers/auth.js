@@ -1,6 +1,6 @@
 const User = require('../models/User');
 const jwt = require('jsonwebtoken');
-const config = require('config');
+const config = require('../config/default.json');
 
 //const passport = require('../passport/passport');
 
